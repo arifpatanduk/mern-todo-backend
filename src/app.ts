@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import routes from "./routes";
 
 const app = express();
 const PORT = 8080;
@@ -14,10 +15,7 @@ const uri = `mongodb+srv://${MONGODB_ATLAS_USERNAME}:${MONGODB_ATLAS_PASSWORD}@c
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 
 app.use(cors());
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, World!");
-});
+app.use(routes);
 
 mongoose.set("useFindAndModify", true);
 mongoose
