@@ -1,6 +1,7 @@
 # This is the repo for all the Backend stuff
 
-In this backend project, we use tech stacks:
+Tech stacks:
+
 - NodeJS
 - TypeScript
 - Express JS
@@ -8,5 +9,3 @@ In this backend project, we use tech stacks:
 - MongoDB Atlas
 - Eslint-TypeScript
 - Prettier
-
-Let's get starting! Clone the repo!
