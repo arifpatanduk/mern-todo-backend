@@ -22,7 +22,7 @@ mongoose
   .connect(uri, options)
   .then(() => {
     app.listen(PORT, () => {
-      console.info(`Example app listening at http://localhost:${PORT}`);
+      console.info(`App listening at http://localhost:${PORT}`);
     });
   })
   .catch((error) => {
